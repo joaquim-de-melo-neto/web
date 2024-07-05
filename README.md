@@ -1,2 +1,1 @@
-# web
-Repositório para guardar minhas lições de frontend
+# Lição 01 - HTML BASICS
