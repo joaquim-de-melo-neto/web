@@ -13,6 +13,12 @@ let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
+    if (!localStorage.getItem("name")) {
+        setUserName();
+      } else {
+        const storedName = localStorage.getItem("name");
+        myHeading.textContent = `Mozilla is cool, ${storedName}`;
+      }
     const myName = prompt("Please enter your name.");
     if (!myName) {
       setUserName();
@@ -23,12 +29,7 @@ function setUserName() {
   }
   
 
-  if (!localStorage.getItem("name")) {
-    setUserName();
-  } else {
-    const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Mozilla is cool, ${storedName}`;
-  }
+  
 
   myButton.onclick = () => {
     setUserName();
