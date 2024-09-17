@@ -1,0 +1,19 @@
+h1{
+    color: red;
+}
+
+p, li{
+    color: green;
+    list-style-type: square; /*remove as bolinhas da list*/
+}
+
+li.special{
+    color: blue;
+    list-style-type: upper-roman;
+    font-weight: bold;
+}
+
+span.special{
+    color: orange;
+    font-weight: bold;
+}
