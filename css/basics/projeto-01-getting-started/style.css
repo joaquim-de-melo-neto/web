@@ -7,13 +7,37 @@ p, li{
     list-style-type: square; /*remove as bolinhas da list*/
 }
 
-li.special{
+li.special{ /*lista da classe especial*/
     color: blue;
     list-style-type: upper-roman;
     font-weight: bold;
 }
 
-span.special{
+span.special{ /*span da classe especial*/
     color: orange;
     font-weight: bold;
 }
+
+li em{ /*tag em dentro da tag li*/
+    color: rebeccapurple;
+}
+
+h1+p{ /*tag h1 seguida da tag p*/
+    font-size: 200%;
+}
+
+/*links baseados em estado*/
+a:visited{
+    color: pink;
+}
+
+a:link{
+    color: rebeccapurple;
+    text-decoration: none; /*remove o sublinhado*/
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline; /*sublinhado no hover*/
+}
+
