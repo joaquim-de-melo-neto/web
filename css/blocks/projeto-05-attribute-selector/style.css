@@ -6,6 +6,6 @@ li[class] {
     background-color: yellow;
   }
   
-  li[class~="a"] {
+  li[class~="a"] { /*Age em elementos 'li' cujo atributo 'class' seja uma lista de valores que contenha o valor 'a'*/
     color: red;
   }
