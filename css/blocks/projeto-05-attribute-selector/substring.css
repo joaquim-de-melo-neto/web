@@ -1,8 +1,8 @@
-li[class^="a"] { /*Age em elementos 'li' cujo atributo 'class' seja uma lista de valores que comece com o valor 'a'*/
+li[class^="a"] { /*Age em elementos 'li' cujo atributo 'class' comece com o caracter 'a'*/
   font-size: 200%;
 }
 
-li[class$="a"] { /*Age em elementos 'li' cujo atributo 'class' seja uma lista de valores que termine com o valor 'a'*/
+li[class$="a"] { /*Age em elementos 'li' cujo atributo 'class' termine com o caracter 'a'*/
   background-color: yellow;
 }
 

@@ -1,0 +1,7 @@
+li[class^="a"] {
+    background-color: yellow;
+  }
+  
+  li[class^="a" i] { /*Age em elementos 'li' cujo atributo 'class' comece com o caracter 'a' ou 'A'*/ 
+    color: red;
+  }
