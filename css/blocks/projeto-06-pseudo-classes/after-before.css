@@ -1,0 +1,17 @@
+.box1::before {
+    font-weight: bold;
+    content: "This should show before the other content. ";
+}
+
+.box2::after {
+    content: " ➥";
+}
+
+.box3::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+  }
