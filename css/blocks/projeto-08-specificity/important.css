@@ -1,0 +1,18 @@
+/* There is a special piece of CSS that you can use to overrule all of the above calculations,
+even inline styles - the !important flag. */
+
+#winning {
+    background-color: red;
+    border: 1px solid black;
+}
+
+.better {
+    background-color: gray;
+     border: none !important; /* Essa declaração se sobressai sobre a propriedade border do bloco de cima */
+}
+
+p {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
