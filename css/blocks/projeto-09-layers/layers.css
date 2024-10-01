@@ -1,0 +1,17 @@
+@layer page { /* Primeira layer criada. Menor precedência */
+    h1 {
+      text-decoration: overline;
+      color: red;
+    }
+  }
+  
+  @layer site { /* Segunda layer criada. Mais precedência que a segunda. */
+    h1 {
+      text-decoration: underline;
+      color: green;
+    }
+  }
+  
+  /* Para que essa ordem seja ativa, ela deve ser declarada antes das declarações de layers.
+     Tente por essa declaração no topo. */
+  @layer site, page;

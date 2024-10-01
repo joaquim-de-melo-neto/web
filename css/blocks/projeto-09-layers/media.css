@@ -1,0 +1,19 @@
+/* Camada site tem precedência sobre a camada page por ser declarada depois.
+   Mas só será aplicada se as condições de @media forem satisfeitas. */
+@media (min-width: 50em) {
+    @layer site;
+  }
+  
+  @layer page {
+    h1 {
+      text-decoration: overline;
+      color: red;
+    }
+  }
+  
+  @layer site {
+    h1 {
+      text-decoration: underline;
+      color: green;
+    }
+  }

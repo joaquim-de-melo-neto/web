@@ -1,0 +1,12 @@
+@import url("components-lib.css") layer(components);
+@import url("dialog.css") layer(components.dialog); /* Declaração de nested layer. */
+@import url("marketing.css") layer(site);
+
+@import url(comments.css) layer(social);
+@import url(sm-icons.css) layer(social);
+
+/* You can import styles and create layers based on specific conditions using media queries and feature queries.
+ The following imports a style sheet into an international layer only if the browser supports display: ruby,
+ and the file being imported is dependent on the width of the screen.*/
+
+@import url("ruby-narrow.css") layer(international) supports(display: ruby);
