@@ -1,0 +1,19 @@
+.wrapper {
+    font-size: 1.5em;
+  }
+  
+  .px {
+    width: 200px;
+  }
+  
+  .vw {
+    width: 10vw;
+  }
+  
+  .em {
+    width: 18em;
+  }
+
+  .box{
+    border: 5px solid;
+  }

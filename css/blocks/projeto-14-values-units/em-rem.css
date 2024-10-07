@@ -1,0 +1,13 @@
+html {
+    font-size: 20px;
+  }
+  
+  .ems li {
+    /* parent element's font-size */
+    font-size: 0.95em; 
+  }
+  
+  .rems li {
+    /* root element's font-size */
+    font-size: 1.3rem;
+  }
