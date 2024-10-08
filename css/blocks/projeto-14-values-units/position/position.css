@@ -1,0 +1,8 @@
+.box {
+    height: 300px;
+    width: 400px;
+    border: 20px solid black;
+    background-image: url(star.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50px right 30px;
+  }
