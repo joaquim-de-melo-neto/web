@@ -1,0 +1,7 @@
+.box {
+  border: 5px solid darkblue;
+  /* 1vh is equal to 1% of the viewport height, and 1vw is equal to 1% of the viewport width */
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}
