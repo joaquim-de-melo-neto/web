@@ -1,0 +1,15 @@
+.myform input[name="keywords"],
+.myform input[name="btnSubmit"]
+{
+  border: 2px solid #000;
+  padding: 10px;
+  font-size: inherit;
+}
+
+.myform input[name="btnSubmit"]{
+  background-color: rebeccapurple;
+  color: white;
+  border: 5px;
+  border-radius: 5px; 
+
+}
