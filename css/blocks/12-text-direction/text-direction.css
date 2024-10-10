@@ -4,6 +4,7 @@
   }
   
   .logical {
+    /* Quando usando o direcionamento lógico considere a direção do texto como "inline". */
     margin-block-start: 20px;
     padding-inline-end: 2em;
     padding-block-start: 2px;

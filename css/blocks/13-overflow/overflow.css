@@ -7,6 +7,4 @@
     display them—even if there is not enough content to overflow.
     'auto' allows the browser to determine if it should display scrollbars.*/
     overflow: visible; 
-
-
 }
