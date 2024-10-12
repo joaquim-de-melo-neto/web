@@ -1,0 +1,41 @@
+table {
+    border-top:    1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: top;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    padding: .3em;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #eee;
+  }
+  
+  th:nth-child(2),
+  th:nth-child(3),
+  td:nth-child(2),
+  td:nth-child(3) {
+    text-align: right;
+  }
+  
+  th:nth-child(1),
+  th:nth-child(4),
+  td:nth-child(1),
+  td:nth-child(4) {
+    text-align: left;
+  }
+  
+  tfoot {
+    border-top: 1px solid #999;
+  }
+  
+  #fh {
+    text-align: right;
+  }
+  
+  #fd {
+    text-align: left;
+  }
+  
