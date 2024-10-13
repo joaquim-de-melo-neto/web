@@ -1,0 +1,10 @@
+/* In the image below we have a pleasingly round balloon.
+The actual file is rectangular, but by floating the image 
+(shapes only apply to floated elements) and using the shape-outside
+ property with a value of circle(50%), we can give the effect of the
+text following the line of the balloon. */
+
+img {
+  float: left;
+  shape-outside: circle(50%);
+}

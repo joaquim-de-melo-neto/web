@@ -1,0 +1,26 @@
+img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+.grayscale {
+  filter: grayscale(60%);
+}
+
+.contrast {
+  filter: contrast(200%);
+}
+
+.invert {
+  filter: invert(100%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(200deg);
+}
