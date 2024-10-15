@@ -3,8 +3,8 @@
 p {
     /* 0-0-1 */
     /* Comporta-se como a terceira camada*/
-    background-color: red;
-    color: grey !important;
+    background-color: red; /*win*/
+    color: gray !important;
     border: 5px inset purple;
 }
 
@@ -17,9 +17,9 @@ p#addSpecificity {
     #addSpecificity {
         /* 1-0-0 */
         background-color: blue;
-        color: black !important;
+        color: yellow !important; /*win*/
         border-width: 10px;
-        border-style: dashed !important;
+        border-style: dashed !important; /*win*/
     }
 }
 
