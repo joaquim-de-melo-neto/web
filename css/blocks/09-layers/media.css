@@ -6,7 +6,7 @@
   
   @layer page {
     h1 {
-      text-decoration: overline;
+      text-decoration: line-through;
       color: red;
     }
   }
