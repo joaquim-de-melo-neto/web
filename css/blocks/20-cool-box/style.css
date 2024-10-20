@@ -1,0 +1,21 @@
+html {
+  font-family: sans-serif;
+}
+
+/* Your CSS below here */
+div {
+  color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 1px 1px black;
+  text-shadow: 1px 1px black;
+  display: inline-block;
+  text-align: center;
+  line-height: 150px;
+  width: 200px;
+  height: 150px;
+  margin-inline-start: 50%;
+  /* Aumenta em 10% a font em relacão ao pai raiz */
+  font-size: 1.1rem; 
+  background-color: red;
+
+}
