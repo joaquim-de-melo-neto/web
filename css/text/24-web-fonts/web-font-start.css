@@ -42,8 +42,20 @@ h2 {
   font-size: 2.4rem;
 }
 
+h2.googleDanfo {
+  font-family: Danfo;
+  font-size: 2.4rem;
+}
+
 p {
   font-family: fira_sansregular;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+}
+
+p.googlePW {
+  font-family: "Playwrite GB S";
   font-size: 1.4rem;
   line-height: 1.6;
   word-spacing: 0.6rem;
