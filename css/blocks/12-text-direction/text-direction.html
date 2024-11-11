@@ -1,4 +1,34 @@
-<link rel="stylesheet" href="text-direction.css">
+<style>
+    .box {
+        inline-size: 50%;
+        writing-mode: horizontal-tb;
+    }
+
+    .physical {
+        margin-top: 20px;
+        padding-right: 2em;
+        padding-top: 2px;
+        border-top: 5px solid pink;
+        border-right: 10px dotted rebeccapurple;
+        border-bottom: 1em double orange;
+        border-left: 1px solid black;
+    }
+
+    .logical {
+        /* Quando usando o direcionamento lógico considere a direção do texto como "inline". */
+        margin-block-start: 20px;
+        padding-inline-end: 2em;
+        padding-block-start: 2px;
+        border-block-start: 5px solid pink;
+        border-inline-end: 10px dotted rebeccapurple;
+        border-block-end: 1em double orange;
+        border-inline-start: 1px solid black;
+    }
+
+    h2 {
+        border-block-start: 5px solid black;
+    }
+</style>
 <div class="wrapper">
     <div class="box physical">
         <h2>Physical Properties</h2>

@@ -1,4 +1,14 @@
-<link rel="stylesheet" href="function.css">
+<style>
+    /* The 20% is based on the width of the parent container (.wrapper) and if that width changes, the calculation will change too: */
+    .wrapper {
+        width: 400px;
+    }
+
+    .box {
+        border: 5px solid black;
+        width: calc(20% + 200px);
+    }
+</style>
 <div class="wrapper">
     <div class="box">My width is calculated.</div>
 </div>

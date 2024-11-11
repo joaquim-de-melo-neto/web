@@ -1,7 +1,26 @@
-<link rel="stylesheet" href="percentage.css">
+<style>
+  .wrapper {
+    width: 400px;
+    border: 5px solid rebeccapurple;
+  }
+
+  .px {
+    width: 200px;
+    border: 5px solid green;
+
+  }
+
+  .percent {
+    width: 50%;
+    border: 5px solid red;
+
+  }
+</style>
+
 <div class="box px">I am 200px wide</div>
-<div class="box percent">I am 50% wide</div>
+<div class="box percent">I am 50% parent relative wide</div>
 <div class="wrapper">
+  <h2>wrapper box</h2>
   <div class="box px">I am 200px wide</div>
-  <div class="box percent">I am 50% wide</div>
+  <div class="box percent">I am 50% parent relative wide</div>
 </div>

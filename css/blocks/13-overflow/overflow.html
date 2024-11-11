@@ -1,6 +1,19 @@
-<div class="box">This box has a height and a width. This means that if there is too much content to be displayed within
+<style>
+    .box {
+    border: 1px solid #333333;
+    width: 350px;
+    height: 80px;
+    /*To crop content when it overflows, you can set overflow: 'hidden'.
+    Using 'scroll', browsers with visible scrollbars will always 
+    display them—even if there is not enough content to overflow.
+    'auto' allows the browser to determine if it should display scrollbars.*/
+    overflow: visible; 
+}
+</style>
+<div class="box">
+    This box has a height and a width. This means that if there is too much content to be displayed within
     the assigned height, there will be an overflow situation. If overflow is set to hidden then any overflow will not be
-    visible.
+    <mark>visible</mark>
 </div>
 
 <p>This content is outside of the box.</p>
