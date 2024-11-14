@@ -1,4 +1,26 @@
-<link rel="stylesheet" href="max-height.css">
+<style>
+  * {
+    border: 2px solid black;
+  }
+
+  .box {
+    width: 200px;
+  }
+
+  .minibox {
+    width: 50px;
+  }
+
+  .width {
+    /* Deixa a imagem do tamanho da caixa */
+    width: 100%;
+  }
+
+  .max {
+    /* Não permite que a imagem cresca indefinidamente, evitando pixelation */
+    max-width: 100%;
+  }
+</style>
 <div class="wrapper">
   <div class="box"><img src="star.png" alt="star" class="width"></div>
   <div class="box"><img src="star.png" alt="star" class="max"></div>

@@ -1,4 +1,27 @@
-<link rel="stylesheet" href="object-fit.css">
+<style>
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 5px solid black;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cover {
+        object-fit: cover;
+    }
+
+    .contain {
+        object-fit: contain;
+    }
+
+    .fill {
+        object-fit: fill;
+    }
+</style>
 <div class="wrapper">
     <div class="box"><img src="balloons.jpg" alt="balloons" class="cover"></div>
     <div class="box"><img src="balloons.jpg" alt="balloons" class="contain"></div>
