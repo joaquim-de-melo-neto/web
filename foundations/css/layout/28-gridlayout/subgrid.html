@@ -1,74 +1,154 @@
-<link rel="stylesheet" href="subgrid.css">
-<div class="container">
-    <header>This is my lovely blog</header>
-    <div class="articles">
-      <article>
-        <h1>Darmok and Jalad had a picnic at Tanagra</h1>
-  
-        <p>
-          Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
-          porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
-          auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
-          orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac
-          ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat.
-          Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros
-          pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam
-          nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum
-          sapien.
-        </p>
-  
-        <button>Read more</button>
-      </article>
-      <article>
-        <h1>Temba held his arms wide</h1>
-        <p>
-          Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
-          porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
-          auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
-          orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac
-          ornare ex malesuada et ...
-        </p>
-        <button>Read more</button>
-      </article>
-      <article>
-        <h1>Gilgamesh, a king, at Uruk</h1>
-        <p>
-          Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
-          porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
-          auctor cursus massa at porta ...
-        </p>
-        <button>Read more</button>
-      </article>
-    </div>
+<style>
+  body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font:
+      0.9em/1.2 Arial,
+      Helvetica,
+      sans-serif;
+  }
 
-    <aside>
-      <h2>Other things</h2>
+  header,
+  footer {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  aside {
+    border-right: 1px solid #999;
+    grid-area: sidebar;
+    padding-right: 10px;
+    font-size: 0.8em;
+  }
+
+  footer {
+    grid-area: footer;
+    margin-block-end: 20px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+
+  .articles {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: inherit;
+  }
+
+  article {
+    padding: 10px;
+    border: 2px solid rgb(79 185 227);
+    border-radius: 5px;
+  }
+
+  /* Usando subgrid */
+
+  .container-subgrid div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+  }
+
+  .container-subgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    margin-block-start: 20px;
+  }
+
+  #subgrid {
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+    display: grid;
+    gap: inherit;
+    grid-template-columns: subgrid;
+    grid-template-rows: 2fr 1fr;
+  }
+</style>
+<div class="container">
+  <header>This is my lovely blog</header>
+  <div class="articles">
+    <article>
+      <h1>Darmok and Jalad had a picnic at Tanagra</h1>
+
       <p>
-        Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada
-        ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed
-        est.
+        Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
+        porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
+        auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
+        orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac
+        ornare ex malesuada et. In vitae convallis lacus. Aliquam erat volutpat.
+        Suspendisse ac imperdiet turpis. Aenean finibus sollicitudin eros
+        pharetra congue. Duis ornare egestas augue ut luctus. Proin blandit quam
+        nec lacus varius commodo et a urna. Ut id ornare felis, eget fermentum
+        sapien.
+      </p>
+
+      <button>Read more</button>
+    </article>
+    <article>
+      <h1>Temba held his arms wide</h1>
+      <p>
+        Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
+        porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
+        auctor cursus massa at porta. Integer ligula ipsum, tristique sit amet
+        orci vel, viverra egestas ligula. Curabitur vehicula tellus neque, ac
+        ornare ex malesuada et ...
       </p>
       <button>Read more</button>
-    </aside>
-    <footer>Contact me@example.com</footer>
+    </article>
+    <article>
+      <h1>Gilgamesh, a king, at Uruk</h1>
+      <p>
+        Duis felis orci, pulvinar id metus ut, rutrum luctus orci. Cras
+        porttitor imperdiet nunc, at ultricies tellus laoreet sit amet. Sed
+        auctor cursus massa at porta ...
+      </p>
+      <button>Read more</button>
+    </article>
   </div>
 
-  <hr>
+  <aside>
+    <h2>Other things</h2>
+    <p>
+      Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada
+      ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed
+      est.
+    </p>
+    <button>Read more</button>
+  </aside>
+  <footer>Contact me@example.com</footer>
+</div>
 
-  <!-- Usando subgrid -->
-  <div class="container-subgrid">
-    <div>One</div>
-    <div>Two</div>
-    <div>Three</div>
-    <div>Four</div>
-    <div id="subgrid">
-      <div>Five</div>
-      <div>Six</div>
-      <div>Seven</div>
-      <div>Eight</div>
-    </div>
-    <div>Nine</div>
-    <div>Ten</div>
+<hr>
+
+<!-- Usando subgrid -->
+<div class="container-subgrid">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div id="subgrid">
+    <div>Five</div>
+    <div>Six</div>
+    <div>Seven</div>
+    <div>Eight</div>
   </div>
-  
-  
+  <div>Nine</div>
+  <div>Ten</div>
+</div>
