@@ -1,0 +1,21 @@
+<button>Start machine</button>
+<p>The machine is stopped.</p>
+<script>
+    const btnStart = document.querySelector("button");
+    const para = document.querySelector("p");
+
+    btnStart.addEventListener("click", updateBtn);
+
+    function updateBtn() {
+        if(btnStart.textContent === "Start machine"){
+            btnStart.textContent = "Stop machine";
+            para.textContent = "The machine started."
+        }
+        
+        else {
+            btnStart.textContent = "Start machine";
+            para.textContent = "The machine stopped."
+
+        }
+    }
+</script>
