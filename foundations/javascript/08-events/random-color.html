@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Random color example — event handler attribute</title>
-    <style>
-      button {
-        margin: 10px;
-      }
-    </style>
-  </head>
-  <body>
-    <button>Change color</button>
-    <script>
-      const btn = document.querySelector('button');
 
-      function random(number) {
-        return Math.floor(Math.random() * (number+1));
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Random color example — event handler attribute</title>
+  <style>
+    button {
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <button>Change color</button>
+  <script>
+    const btn = document.querySelector('button');
+
+    function random(number) {
+      return Math.floor(Math.random() * (number + 1));
+    }
 
     //   focus, blur, dblclick, mouseover, mouseout
-      btn.addEventListener('click', () => {
-        const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
-        document.body.style.backgroundColor = rndCol;
-      }) // pass an AbortSignal to this handler;
-    </script>
-  </body>
+    btn.addEventListener('click', () => {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+      document.body.style.backgroundColor = rndCol;
+    }) // pass an AbortSignal to this handler;
+
+    // Event handler property. É menos escalável mas também pode ser usada.
+    // btn.onclick = () => {
+    //   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    //   document.body.style.backgroundColor = rndCol;
+    // };
+
+    // Também pode-se usar para chamar uma função nomeada.
+    // function bgChange() {
+    //   const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+    //   document.body.style.backgroundColor = rndCol;
+    // }
+
+    // btn.onclick = bgChange;
+  </script>
+</body>
+
 </html>
