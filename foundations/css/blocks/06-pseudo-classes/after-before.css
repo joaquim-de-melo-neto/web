@@ -10,8 +10,8 @@
 .box3::before {
     content: "";
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 10px;
     background-color: rebeccapurple;
     border: 1px solid black;
   }
