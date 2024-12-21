@@ -10,7 +10,7 @@ img {
 }
 
 .grayscale {
-  filter: grayscale(60%);
+  filter: grayscale(100%);
 }
 
 .contrast {
