@@ -1,0 +1,8 @@
+# node modules
+/node_modules
+
+# arquivos .json
+*.json
+
+# arquivo eslint
+*.mjs
