@@ -1,8 +1,9 @@
 // Person is the superclass
 class Student extends Person {
+    // This attribute is optional
+    name;
     // private attribute
     #year;
-  
     constructor(name, year) {
       // super must be called before others attributions  
       super(name);
