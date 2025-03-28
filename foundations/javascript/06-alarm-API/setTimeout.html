@@ -1,0 +1,16 @@
+<button id="set-alarm">Set alarm</button>
+<div id="output"></div>
+
+<script>
+    const output = document.querySelector("#output");
+    const button = document.querySelector("#set-alarm");
+
+    function setAlarm() {
+        setTimeout(() => {
+            output.textContent = "Wake up!";
+        }, 1000);
+    }
+
+    button.addEventListener("click", setAlarm);
+
+</script>
